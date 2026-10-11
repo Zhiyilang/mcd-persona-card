@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>麦门人格卡 · 扫码点 Star</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: linear-gradient(160deg, #ff0101 0%, #ff5a00 45%, #ffc400 100%);
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    padding: 24px;
+  }
+  .card {
+    width: 360px; background: #fff; border-radius: 24px; overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,.25);
+  }
+  .poster { width: 100%; display: block; }
+  .panel { padding: 18px 20px 24px; text-align: center; }
+  .title { font-size: 20px; font-weight: 800; color: #d40000; margin-bottom: 6px; }
+  .sub { font-size: 13px; color: #555; line-height: 1.5; margin-bottom: 14px; }
+  .qr-row { display: flex; align-items: center; gap: 14px; }
+  .qr { width: 120px; height: 120px; border: 6px solid #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,.18); }
+  .cta { flex: 1; text-align: left; }
+  .cta b { display: block; font-size: 16px; color: #111; margin-bottom: 4px; }
+  .cta span { font-size: 12px; color: #888; }
+  .star { color: #ffb400; font-size: 15px; margin-top: 10px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <img class="poster" src="mcd_persona_poster.png" alt="麦门人格卡海报">
+    <div class="panel">
+      <div class="title">🍔 麦门人格卡</div>
+      <div class="sub">测测你是哪种「麦门人格」，生成你的专属人格卡～</div>
+      <div class="qr-row">
+        <img class="qr" src="star_qr.png" alt="仓库二维码">
+        <div class="cta">
+          <b>扫码点个 Star ⭐</b>
+          <span>进 GitHub 仓库<br>免费测你的麦门人格</span>
+        </div>
+      </div>
+      <div class="star">你的 1 个 Star = 我冲榜的动力 🚀</div>
+    </div>
+  </div>
+</body>
+</html>
